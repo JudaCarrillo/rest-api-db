@@ -5,9 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start:mysql": "node --watch server-with-mysql.js",
-    "start:potsgresql": "node --watch server-with-potsgresql.js",
-    "start:local": "node --watch server-with-local.js",
+    "start": "node app.js",
     "dev": "node --watch app.js"
   },
   "keywords": [],
