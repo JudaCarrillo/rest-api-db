@@ -1,0 +1,5 @@
+//  read json -> recommendable ee
+import { createRequire } from "node:module";
+const require = createRequire(import.meta.url);
+
+export const readJson = (path) => require(path);

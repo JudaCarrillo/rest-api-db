@@ -1,0 +1,34 @@
+### Retrives all movies
+GET http://localhost:3000/movies
+
+### Retrives a movies by id
+GET http://localhost:3000/movies/e46c0706-7d83-4c5c-8f7d-47188f349daf
+
+### Retrives all movies by a genre
+GET http://localhost:3000/movies?genre=action
+
+### Create a movie with POST
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "The god father",
+  "year": 2010,
+  "director": "Christopher Nolan",
+  "duration": 148,
+  "poster": "https://m.media-amazon.com/images/I/91Rc8cAmnAL._AC_UF1000,1000_QL80_.jpg",
+  "genre": ["Action", "Adventure","Sci-Fi"],
+  "rate": 8.8
+}
+
+### Update a movie
+PATCH  http://localhost:3000/movies/956343f4-8303-4ec7-ac1f-9032c7e2cc76
+Content-Type: application/json
+
+{
+  "year": 2010
+}
+
+### Delete a movie
+DELETE http://localhost:3000/movies/4458b1fc-e2d9-4d3f-819f-9f53ef33570b
+
